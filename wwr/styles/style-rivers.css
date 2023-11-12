@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Lato:ital,wght@0,300;1,100&display=swap');
+
+:root {
+    --heading-font: 'Fira Sans', sans-serif;
+    --paragraph-font: 'Lato', Helvetica, sans-serif;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #313C3C;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #c2e2f9;
+    color: #313C3C;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #313C3C;
+    color: #BFBF49;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #BFBF49;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+/* Contact Us */
+.contact-wapper{
+    background-image: url(../images/camping.jpg);
+    background-size: cover;
+    padding: 50px 25% 100px 25%;;
+    text-align: center;
+    margin-top: 50px;
+}
+.form-box{
+    background-color: #313C3C;
+    padding: 20px 25%;
+}
+.form-box h2{
+    color: #BFBF49;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    height: fit-content;
+    margin-top: 0px;
+}
+.personal-wapper, .input-group{
+    display: flex;
+}
+.personal-wapper{
+    flex-direction: row;
+    padding: 5px;
+}
+.input-group{
+    text-align: left;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.message-wapper{
+    padding: 5px;
+    width: 100%;
+}
+.message-wapper textarea{
+    resize: none; 
+}
+.input-group label{
+    font-size: 1rem;
+}
+
+/* Testimonial */
+.testimonial-wapper{
+    color: black;
+}
+.testimonial-wapper h1{
+    font-family: var(--heading-font);
+    margin: 0px 0px 0px 100px;
+    color: #313C3C;
+    font-size: 3rem;
+    height: fit-content;
+}
+.testimonial-wapper p{
+    margin: 0px;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    height: fit-content;
+    margin: 0px 0px 0px 100px;
+}
+
+.content-testimonial{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content-testimonial article{
+    width: 30%;
+    border-radius: 20px 20px 20px 20px;
+    margin: 20px;
+    background-color: #c2e2f9;
+}
+
+.testimonial .img-wapper img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.testimonial .img-wapper{
+    width: 100%;
+    
+}
+.header-testimonial{
+    background-image: url(../images/background.png);
+    background-position-y: -150px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: end;
+}
+.testimonial h2{
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1rem;
+    color: #BFBF49;
+    background-color: #313C3C;
+    box-shadow: 5px 5px 5px #BFBF49;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 0px;
+    position: absolute;
+}
+.testimonial p{
+    padding: 20px;
+    margin: 0px;
+    font-size: 1rem;
+    text-align: justify !important;
+    color: #313C3C;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+
+    .content-testimonial article{
+        width: 100%;
+    }
+
+    .testimonial-wapper h1{
+        text-align: center;
+        margin: 0px;
+    }
+    .testimonial-wapper p{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .contact-wapper{
+        width: 100%;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    .form-box{
+        padding: 20px 10px;
+    }
+}

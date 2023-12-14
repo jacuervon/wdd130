@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Lato:ital,wght@0,300;1,100&display=swap");
+
+:root {
+  --heading-font: "Fira Sans", sans-serif;
+  --paragraph-font: "Lato", Helvetica, sans-serif;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #313c3c;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover {
+  background-color: #c2e2f9;
+  color: #313c3c;
+}
+
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #313c3c;
+  color: #bfbf49;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #bfbf49;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+
+.form-box{
+  color: #313c3c;
+  position: relative;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+@media screen and (max-width: 900px) {
+  nav,
+  footer {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  footer {
+    margin-top: 25px;
+  }
+}

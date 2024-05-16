@@ -1,62 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --primary-color: steelblue;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-nav {
-  background-color: steelblue;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  display: block;
-  padding: 20px;
+body {
+  font-family: Roboto, Arial, sans-serif;
 }
 h1 {
-  color: steelblue;
-}
-main img {
-  width: 150px;
-  height: auto;
-  border: 1px solid steelblue;
-  padding: 2px;
-  box-shadow: 0 0 30px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 p {
   padding: 0px;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+nav a {
+  display: block;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
 main {
-  max-width: 840px;
+  grid-column: 2;
+  margin-top: 0.5rem;
+}
+main p {
+  padding: 0.5rem;
+  text-align: justify;
 }
 main img {
   float: right;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin: 1.5rem;
+  padding: 2px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 30px;
 }
 aside {
   width: 20em;
-  margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: center;
   position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 aside h2 {
   position: absolute;
-  top: 61px;
-  left: 137px;
+  top: 160px;
+  left: 35%;
   color: #ddd;
+  font-size: 3rem;
+}
+aside p {
+  padding: 10px;
+  text-align: justify;
 }
 aside img {
-  width: 200px;
-  height: auto;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
 }
-
 /* Class Selectors */
 .box {
   margin: 1rem;
@@ -64,4 +91,8 @@ footer {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+}
+.grid {
+  display: grid;
+  /* align-items: center; */
 }

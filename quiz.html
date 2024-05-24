@@ -21,39 +21,34 @@
           <label for="q1"
             >Which of the following is a relative unit in CSS?</label
           ><br />
-          <input type="radio" id="q1a" name="q1" value="px" />
-          <label for="q1a">px</label><br />
-          <input type="radio" id="q1b" name="q1" value="em" />
-          <label for="q1b">em</label><br />
-          <input type="radio" id="q1c" name="q1" value="cm" />
-          <label for="q1c">cm</label><br />
-          <input type="radio" id="q1d" name="q1" value="mm" />
-          <label for="q1d">mm</label>
+          <select name="q1" id="q1">
+            <option value="" disabled selected>Select an option</option>
+            <option value="px">px</option>
+            <option value="em">em</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option>
+          </select>
         </fieldset>
-
+        <br />
         <fieldset>
           <legend>Question 2: Padding in CSS</legend>
           <label for="q2"
             >Given the following CSS code, what is the top padding of the
             element?</label
           >
-          <pre>
-                <code>
-                    .box {
-                        padding: 10px 20px 30px 40px;
-                    }
-                </code>
-            </pre>
-          <input type="radio" id="q2a" name="q2" value="10px" />
-          <label for="q2a">10px</label><br />
-          <input type="radio" id="q2b" name="q2" value="20px" />
-          <label for="q2b">20px</label><br />
-          <input type="radio" id="q2c" name="q2" value="30px" />
-          <label for="q2c">30px</label><br />
-          <input type="radio" id="q2d" name="q2" value="40px" />
-          <label for="q2d">40px</label>
+          <div class="code">
+            <code>.box { padding: 10px 20px 30px 40px; }</code>
+          </div>
+          <label for="paddingInput">Enter the top padding value:</label>
+          <input
+            type="number"
+            id="paddingInput"
+            name="paddingInput"
+            min="0"
+            step="any"
+          />
         </fieldset>
-
+        <br />
         <fieldset>
           <legend>Question 3: CSS Selectors</legend>
           <label for="q3"
@@ -67,7 +62,7 @@
             placeholder="Write your answer here"
           />
         </fieldset>
-
+        <br />
         <fieldset>
           <legend>Question 4: CSS Code</legend>
           <label for="q4"
@@ -83,6 +78,7 @@
           ></textarea>
         </fieldset>
 
+        <br />
         <input type="submit" value="Submit Quiz" />
       </form>
     </main>

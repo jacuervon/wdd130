@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <meta name="author" content="Julian A. Cuervo" />
+    <meta
+      name="description"
+      content="Quiz page for Julian A. Cuervo's personal website. This assignment applies the concepts in the learning activities on HTML form structure and style. The quiz will have basic questions about HTML and CSS."
+    />
+    <link rel="stylesheet" href="styles/quiz.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="container">
+      <h1>💻 Basic HTML, and CSS Quiz ✅</h1>
+      <form action="/submit-quiz" method="post">
+        <fieldset>
+          <legend>Question 1: CSS Units of Measure</legend>
+          <label for="q1"
+            >Which of the following is a relative unit in CSS?</label
+          ><br />
+          <input type="radio" id="q1a" name="q1" value="px" />
+          <label for="q1a">px</label><br />
+          <input type="radio" id="q1b" name="q1" value="em" />
+          <label for="q1b">em</label><br />
+          <input type="radio" id="q1c" name="q1" value="cm" />
+          <label for="q1c">cm</label><br />
+          <input type="radio" id="q1d" name="q1" value="mm" />
+          <label for="q1d">mm</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Question 2: Padding in CSS</legend>
+          <label for="q2"
+            >Given the following CSS code, what is the top padding of the
+            element?</label
+          >
+          <pre>
+                <code>
+                    .box {
+                        padding: 10px 20px 30px 40px;
+                    }
+                </code>
+            </pre>
+          <input type="radio" id="q2a" name="q2" value="10px" />
+          <label for="q2a">10px</label><br />
+          <input type="radio" id="q2b" name="q2" value="20px" />
+          <label for="q2b">20px</label><br />
+          <input type="radio" id="q2c" name="q2" value="30px" />
+          <label for="q2c">30px</label><br />
+          <input type="radio" id="q2d" name="q2" value="40px" />
+          <label for="q2d">40px</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Question 3: CSS Selectors</legend>
+          <label for="q3"
+            >Write a CSS selector that selects all &lt;p&gt; elements inside a
+            div with the class "container".</label
+          ><br />
+          <input
+            type="text"
+            id="q3"
+            name="q3"
+            placeholder="Write your answer here"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Question 4: CSS Code</legend>
+          <label for="q4"
+            >Write a CSS rule that sets a margin of 15px for all elements with
+            the class "item".</label
+          ><br />
+          <textarea
+            id="q4"
+            name="q4"
+            rows="4"
+            cols="50"
+            placeholder=".item { ... }"
+          ></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Quiz" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2024 🤖 Julian A. Cuervo 🤖 Quiz</p>
+    </footer>
+  </body>
+</html>
